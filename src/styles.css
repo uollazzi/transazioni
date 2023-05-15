@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+.transazioni {
+  display: flex;
+
+}
+
+.transazione {
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.i {
+  background-color: lightgreen;
+}
+
+.w {
+  background-color: lightgray;
+}
+
+.expensive {
+  background-color: yellow;
+}

@@ -1,0 +1,11 @@
+<div class="transazioni">
+  <div *ngFor="let t of transazioni" class="transazione"
+    [ngClass]="{'i': t.type == 'invoice','w': t.type == 'withdrawal'}">
+    <h3>{{t.business}}</h3>
+    <h4>{{t.name}}</h4>
+    <p>{{t.account}}</p>
+    <p>{{t.type}}</p>
+    <p [ngClass]="{'expensive': t.amount > 700}">{{t.amount | currency:'EUR'}}</p>
+    <p>{{t.date * 1000 | date:'long'}}</p>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+{{msg}}
+<hr>
+<app-transazione-preview *ngFor="let t of transazioni" [transazione]="t" (onSelected)="transazioneSelezionata($event)"
+  (onDeleted)="eliminaTransazione($event)"></app-transazione-preview>
